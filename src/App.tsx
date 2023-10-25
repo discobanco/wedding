@@ -140,7 +140,7 @@ const App: React.FC = () => {
             fontFamily={"LoveLight"}
             pb={20}
           >
-            Wedding in Ireland
+            Wedding in Spain
           </Typography>
         </Paper>
       </Grid>
