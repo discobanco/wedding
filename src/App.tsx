@@ -62,7 +62,7 @@ const App: React.FC = () => {
             textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
             filter: "grayscale(100%) brightness(100%)",
             ":hover": {
-              filter: "grayscale(0%) brightness(130%)",
+              filter: "grayscale(0%) brightness(120%)",
             },
           }}
           onClick={() => {
@@ -113,7 +113,7 @@ const App: React.FC = () => {
             textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
             filter: "grayscale(100%) brightness(100%)",
             ":hover": {
-              filter: "grayscale(0%) brightness(130%)",
+              filter: "grayscale(0%) brightness(110%)",
             },
           }}
           onClick={() => {
