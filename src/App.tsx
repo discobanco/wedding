@@ -60,6 +60,9 @@ const App: React.FC = () => {
               backgroundBlendMode: "luminosity",
             },
           }}
+          onClick={() => {
+            window.location.href = "https://withjoy.com/andres-and-fiona-spain";
+          }}
         >
           <Typography variant="h3" component="h1" color="white" pt={20}>
             Spain Wedding
@@ -80,9 +83,6 @@ const App: React.FC = () => {
           padding: "20px", // Add padding for spacing
           borderRadius: "4px", // Rounded corners
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
-        }}
-        onClick={() => {
-          window.location.href = "https://withjoy.com/andres-and-fiona-spain";
         }}
       >
         <Typography variant="h1" component="h1" fontFamily={"LoveLight"}>
