@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  Container,
-  Grid,
-  Paper,
-  Typography,
-  CssBaseline,
-  Box,
-} from "@mui/material";
+import { Grid, Paper, Typography, Box } from "@mui/material";
+import Separator from "./Separator";
 
 const App: React.FC = () => {
   return (
@@ -28,8 +22,11 @@ const App: React.FC = () => {
             justifyContent: "center",
             height: "100%",
             cursor: "pointer",
+            transition: "filter 0.3s ease-in-out",
+            textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
+            filter: "grayscale(100%) brightness(100%)",
             ":hover": {
-              backgroundBlendMode: "luminosity",
+              filter: "grayscale(0%) brightness(130%)",
             },
           }}
           onClick={() => {
@@ -37,8 +34,25 @@ const App: React.FC = () => {
               "https://withjoy.com/andres-and-fiona-ireland";
           }}
         >
-          <Typography variant="h3" component="h1" color="white" pt={20}>
-            Ireland Wedding
+          <Typography
+            variant="h1"
+            component="h1"
+            color="white"
+            pt={20}
+            style={{ textShadow: "10px", textAlign: "center" }}
+            fontFamily={"LoveLight"}
+          >
+            Wedding in Ireland
+          </Typography>
+          <Separator color="white" />
+          <Typography
+            variant="h3"
+            component="h3"
+            color="white"
+            style={{ textShadow: "10px", textAlign: "center" }}
+            fontFamily={"LoveLight"}
+          >
+            Boda en Irlanda
           </Typography>
         </Paper>
       </Grid>
@@ -56,46 +70,85 @@ const App: React.FC = () => {
             justifyContent: "center",
             height: "100%",
             cursor: "pointer",
+            transition: "filter 0.3s ease-in-out",
+            textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
+            filter: "grayscale(100%) brightness(100%)",
             ":hover": {
-              backgroundBlendMode: "luminosity",
+              filter: "grayscale(0%) brightness(130%)",
             },
           }}
           onClick={() => {
             window.location.href = "https://withjoy.com/andres-and-fiona-spain";
           }}
         >
-          <Typography variant="h3" component="h1" color="white" pt={20}>
-            Spain Wedding
+          <Typography
+            variant="h1"
+            component="h1"
+            color="white"
+            pt={20}
+            style={{ textShadow: "10px", textAlign: "center" }}
+            fontFamily={"LoveLight"}
+          >
+            Wedding in Spain
+          </Typography>
+          <Separator color="white" />
+          <Typography
+            variant="h3"
+            component="h3"
+            color="white"
+            style={{ textShadow: "10px", textAlign: "center" }}
+            fontFamily={"LoveLight"}
+          >
+            Boda en España
           </Typography>
         </Paper>
       </Grid>
 
       {/* Floating Message */}
-      <Box
-        sx={{
+      <div
+        style={{
           position: "absolute",
           top: "20px", // Adjust the distance from the bottom as needed
           left: "50%",
           transform: "translateX(-50%)",
           textAlign: "center",
           width: "80%", // Adjust the width as needed
-          backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white background
-          padding: "20px", // Add padding for spacing
-          borderRadius: "4px", // Rounded corners
-          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
         }}
       >
-        <Typography variant="h1" component="h1" fontFamily={"LoveLight"}>
-          Fiona and Andrés
+        <Typography
+          variant="h1"
+          component="h1"
+          fontFamily={"LoveLight"}
+          py={2}
+          style={{ fontSize: "100px" }}
+        >
+          Fiona & Andrés
         </Typography>
-        <Typography variant="h4" component="h2">
-          Choose Your Destination
-        </Typography>
-        <Typography variant="body1" color="textSecondary">
-          You can visit either or both weddings by clicking on the destinations
-          above.
-        </Typography>
-      </Box>
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white background
+            padding: "20px", // Add padding for spacing
+            borderRadius: "4px", // Rounded corners
+            boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
+          }}
+        >
+          <Typography variant="h4" component="h2">
+            Choose Your Destination
+          </Typography>
+          <Typography variant="body1" color="textSecondary">
+            You can visit either or both weddings by clicking on the
+            destinations above.
+          </Typography>
+          <Separator />
+          <Typography variant="h4" component="h2">
+            Elige tu destino
+          </Typography>
+          <Typography variant="body1" color="textSecondary">
+            Puedes visitar cualquiera o ambos bodas haciendo clic en los
+            destinos de arriba.
+          </Typography>
+        </Box>
+      </div>
     </Grid>
   );
 };
