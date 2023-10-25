@@ -139,7 +139,7 @@ const App: React.FC = () => {
           </Typography>
           <Typography variant="body1" color="textSecondary">
             You can visit either or both weddings by clicking on the
-            destinations above.
+            destinations below.
           </Typography>
           <Separator />
           <Typography variant="h4" component="h2">
@@ -147,7 +147,7 @@ const App: React.FC = () => {
           </Typography>
           <Typography variant="body1" color="textSecondary">
             Puedes visitar cualquiera o ambos bodas haciendo clic en los
-            destinos de arriba.
+            destinos de abajo.
           </Typography>
         </Box>
       </div>
