@@ -16,6 +16,7 @@ const App: React.FC = () => {
           sx={{
             backgroundImage: 'url("img/wicklow.jpg")',
             backgroundSize: "cover",
+            backgroundPosition: "center left",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -64,6 +65,7 @@ const App: React.FC = () => {
           sx={{
             backgroundImage: 'url("img/valencia.jpg")',
             backgroundSize: "cover",
+            backgroundPosition: "center center",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
