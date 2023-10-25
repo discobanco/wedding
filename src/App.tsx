@@ -40,7 +40,7 @@ const App: React.FC = () => {
             Elige tu destino
           </Typography>
           <Typography variant="body1" color="textSecondary">
-            Puedes visitar cualquiera o ambos bodas haciendo clic en los
+            Puedes visitar cualquiera o ambas bodas haciendo clic en los
             destinos de abajo.
           </Typography>
         </Box>
