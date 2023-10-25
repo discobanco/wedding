@@ -9,7 +9,42 @@ const App: React.FC = () => {
       spacing={0}
       sx={{ height: "100vh", backgroundColor: "black" }}
     >
-      {/* Left Split - Ireland */}
+      {/* Floating Message */}
+      <div className="floating-message">
+        <Typography
+          variant="h1"
+          component="h1"
+          fontFamily={"StyleScript"}
+          py={2}
+          style={{ fontSize: "100px" }}
+        >
+          Fiona & Andrés
+        </Typography>
+        <Box
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white background
+            padding: "20px", // Add padding for spacing
+            borderRadius: "4px", // Rounded corners
+            boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
+          }}
+        >
+          <Typography variant="h4" component="h2">
+            Choose Your Destination
+          </Typography>
+          <Typography variant="body1" color="textSecondary">
+            You can visit either or both weddings by clicking on the
+            destinations below.
+          </Typography>
+          <Separator />
+          <Typography variant="h4" component="h2">
+            Elige tu destino
+          </Typography>
+          <Typography variant="body1" color="textSecondary">
+            Puedes visitar cualquiera o ambos bodas haciendo clic en los
+            destinos de abajo.
+          </Typography>
+        </Box>
+      </div>
       <Grid item xs={12} sm={6}>
         <Paper
           elevation={0}
@@ -36,6 +71,7 @@ const App: React.FC = () => {
           }}
         >
           <Typography
+            className="title-section"
             variant="h1"
             component="h1"
             color="white"
@@ -52,6 +88,7 @@ const App: React.FC = () => {
             color="white"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}
+            pb={20}
           >
             Boda en Irlanda
           </Typography>
@@ -88,6 +125,7 @@ const App: React.FC = () => {
             component="h1"
             color="white"
             pt={20}
+            className="title-section"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}
           >
@@ -100,57 +138,12 @@ const App: React.FC = () => {
             color="white"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}
+            pb={20}
           >
             Boda en España
           </Typography>
         </Paper>
       </Grid>
-
-      {/* Floating Message */}
-      <div
-        style={{
-          position: "absolute",
-          top: "20px", // Adjust the distance from the bottom as needed
-          left: "50%",
-          transform: "translateX(-50%)",
-          textAlign: "center",
-          width: "80%", // Adjust the width as needed
-        }}
-      >
-        <Typography
-          variant="h1"
-          component="h1"
-          fontFamily={"StyleScript"}
-          py={2}
-          style={{ fontSize: "100px" }}
-        >
-          Fiona & Andrés
-        </Typography>
-        <Box
-          sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white background
-            padding: "20px", // Add padding for spacing
-            borderRadius: "4px", // Rounded corners
-            boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
-          }}
-        >
-          <Typography variant="h4" component="h2">
-            Choose Your Destination
-          </Typography>
-          <Typography variant="body1" color="textSecondary">
-            You can visit either or both weddings by clicking on the
-            destinations below.
-          </Typography>
-          <Separator />
-          <Typography variant="h4" component="h2">
-            Elige tu destino
-          </Typography>
-          <Typography variant="body1" color="textSecondary">
-            Puedes visitar cualquiera o ambos bodas haciendo clic en los
-            destinos de abajo.
-          </Typography>
-        </Box>
-      </div>
     </Grid>
   );
 };
