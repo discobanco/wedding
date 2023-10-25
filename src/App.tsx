@@ -15,8 +15,8 @@ const App: React.FC = () => {
           variant="h1"
           component="h1"
           fontFamily={"StyleScript"}
-          py={2}
-          style={{ fontSize: "100px" }}
+          py={1}
+          style={{ fontSize: "80px" }}
         >
           Fiona & Andrés
         </Typography>
@@ -28,7 +28,7 @@ const App: React.FC = () => {
             boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
           }}
         >
-          <Typography variant="h4" component="h2">
+          <Typography variant="h5" component="h2">
             Choose Your Destination
           </Typography>
           <Typography variant="body1" color="textSecondary">
@@ -36,7 +36,7 @@ const App: React.FC = () => {
             destinations below.
           </Typography>
           <Separator />
-          <Typography variant="h4" component="h2">
+          <Typography variant="h5" component="h2">
             Elige tu destino
           </Typography>
           <Typography variant="body1" color="textSecondary">
@@ -72,8 +72,8 @@ const App: React.FC = () => {
         >
           <Typography
             className="title-section"
-            variant="h1"
-            component="h1"
+            variant="h2"
+            component="h2"
             color="white"
             pt={20}
             style={{ textShadow: "10px", textAlign: "center" }}
@@ -83,8 +83,8 @@ const App: React.FC = () => {
           </Typography>
           <Separator color="white" />
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h4"
+            component="h4"
             color="white"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}
@@ -121,20 +121,20 @@ const App: React.FC = () => {
           }}
         >
           <Typography
-            variant="h1"
-            component="h1"
+            variant="h2"
+            component="h2"
             color="white"
             pt={20}
             className="title-section"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}
           >
-            Wedding in Spain
+            Boda en España
           </Typography>
           <Separator color="white" />
           <Typography
-            variant="h3"
-            component="h3"
+            variant="h4"
+            component="h4"
             color="white"
             style={{ textShadow: "10px", textAlign: "center" }}
             fontFamily={"LoveLight"}

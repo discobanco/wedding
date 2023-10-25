@@ -1,5 +1,10 @@
 const Separator = ({ color = "black" }) => (
-  <div style={{ margin: "-10pt 0 -20px 0" }}>
+  <div
+    style={{
+      margin: "-10pt 0 -20px 0",
+      filter: "drop-shadow(0 0 4px rgba(0, 0, 0, 1))",
+    }}
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       version="1.0"
