@@ -118,7 +118,7 @@ const App: React.FC = () => {
         <Typography
           variant="h1"
           component="h1"
-          fontFamily={"LoveLight"}
+          fontFamily={"StyleScript"}
           py={2}
           style={{ fontSize: "100px" }}
         >
