@@ -32,8 +32,12 @@ const App: React.FC = () => {
               backgroundBlendMode: "luminosity",
             },
           }}
+          onClick={() => {
+            window.location.href =
+              "https://withjoy.com/andres-and-fiona-ireland";
+          }}
         >
-          <Typography variant="h3" component="h1" color="white">
+          <Typography variant="h3" component="h1" color="white" pt={20}>
             Ireland Wedding
           </Typography>
         </Paper>
@@ -57,7 +61,7 @@ const App: React.FC = () => {
             },
           }}
         >
-          <Typography variant="h3" component="h1" color="white">
+          <Typography variant="h3" component="h1" color="white" pt={20}>
             Spain Wedding
           </Typography>
         </Paper>
@@ -77,16 +81,14 @@ const App: React.FC = () => {
           borderRadius: "4px", // Rounded corners
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)", // Add a subtle shadow
         }}
+        onClick={() => {
+          window.location.href = "https://withjoy.com/andres-and-fiona-spain";
+        }}
       >
-        <Typography
-          variant="h1"
-          component="h1"
-          color="primary"
-          fontFamily={"serif"}
-        >
-          Fiona and Andres
+        <Typography variant="h1" component="h1" fontFamily={"LoveLight"}>
+          Fiona and Andrés
         </Typography>
-        <Typography variant="h4" component="h2" color="primary">
+        <Typography variant="h4" component="h2">
           Choose Your Destination
         </Typography>
         <Typography variant="body1" color="textSecondary">
