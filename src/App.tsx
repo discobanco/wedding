@@ -46,103 +46,126 @@ const App: React.FC = () => {
         </Box>
       </div>
       <Grid item xs={12} sm={6}>
-        <Paper
-          elevation={0}
-          sx={{
-            backgroundImage: 'url("img/wicklow.jpg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center left",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            cursor: "pointer",
-            transition: "filter 0.3s ease-in-out",
-            textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
-            filter: "grayscale(100%) brightness(100%)",
-            ":hover": {
-              filter: "grayscale(0%) brightness(120%)",
-            },
-          }}
-          onClick={() => {
-            window.location.href =
-              "https://withjoy.com/andres-and-fiona-ireland";
-          }}
+        <a
+          className="link-unstyled"
+          href="https://withjoy.com/andres-and-fiona-ireland"
         >
-          <Typography
-            className="title-section"
-            variant="h2"
-            component="h2"
-            color="white"
-            pt={20}
-            style={{ textShadow: "10px", textAlign: "center" }}
-            fontFamily={"LoveLight"}
+          <Paper
+            elevation={0}
+            sx={{
+              backgroundImage: 'url("img/wicklow.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center left",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100%",
+              cursor: "pointer",
+              transition: "filter 0.3s ease-in-out",
+              textShadow:
+                "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
+              filter: "grayscale(100%) brightness(100%)",
+              ":hover": {
+                filter: "grayscale(0%) brightness(120%)",
+              },
+            }}
           >
-            Wedding in Ireland
-          </Typography>
-          <Separator color="white" />
-          <Typography
-            variant="h4"
-            component="h4"
-            color="white"
-            style={{ textShadow: "10px", textAlign: "center" }}
-            fontFamily={"LoveLight"}
-            pb={20}
-          >
-            Boda en Irlanda
-          </Typography>
-        </Paper>
+            <Typography
+              className="title-section"
+              variant="h4"
+              component="h4"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+              pt={20}
+            >
+              24/08
+            </Typography>
+            <Typography
+              variant="h2"
+              component="h2"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+            >
+              Wedding in Ireland
+            </Typography>
+            <Separator color="white" />
+            <Typography
+              variant="h4"
+              component="h4"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+              pb={20}
+            >
+              Boda en Irlanda
+            </Typography>
+          </Paper>
+        </a>
       </Grid>
 
       {/* Right Split - Spain */}
       <Grid item xs={12} sm={6}>
-        <Paper
-          elevation={0}
-          sx={{
-            backgroundImage: 'url("img/valencia.jpg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            cursor: "pointer",
-            transition: "filter 0.3s ease-in-out",
-            textShadow: "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
-            filter: "grayscale(100%) brightness(100%)",
-            ":hover": {
-              filter: "grayscale(0%) brightness(110%)",
-            },
-          }}
-          onClick={() => {
-            window.location.href = "https://withjoy.com/andres-and-fiona-spain";
-          }}
+        <a
+          className="link-unstyled"
+          href="https://withjoy.com/andres-and-fiona-spain"
         >
-          <Typography
-            variant="h2"
-            component="h2"
-            color="white"
-            pt={20}
-            className="title-section"
-            style={{ textShadow: "10px", textAlign: "center" }}
-            fontFamily={"LoveLight"}
+          <Paper
+            elevation={0}
+            sx={{
+              backgroundImage: 'url("img/valencia.jpg")',
+              backgroundSize: "cover",
+              backgroundPosition: "center center",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100%",
+              cursor: "pointer",
+              transition: "filter 0.3s ease-in-out",
+              textShadow:
+                "0em 0em 1em #000, 0em 0em 1em #000, 0em 0em 1em #000",
+              filter: "grayscale(100%) brightness(100%)",
+              ":hover": {
+                filter: "grayscale(0%) brightness(110%)",
+              },
+            }}
           >
-            Boda en España
-          </Typography>
-          <Separator color="white" />
-          <Typography
-            variant="h4"
-            component="h4"
-            color="white"
-            style={{ textShadow: "10px", textAlign: "center" }}
-            fontFamily={"LoveLight"}
-            pb={20}
-          >
-            Wedding in Spain
-          </Typography>
-        </Paper>
+            <Typography
+              className="title-section"
+              variant="h4"
+              component="h4"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+              pt={20}
+            >
+              31/08
+            </Typography>
+            <Typography
+              variant="h2"
+              component="h2"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+            >
+              Boda en España
+            </Typography>
+            <Separator color="white" />
+            <Typography
+              variant="h4"
+              component="h4"
+              color="white"
+              style={{ textShadow: "10px", textAlign: "center" }}
+              fontFamily={"LoveLight"}
+              pb={20}
+            >
+              Wedding in Spain
+            </Typography>
+          </Paper>
+        </a>
       </Grid>
     </Grid>
   );

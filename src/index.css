@@ -44,3 +44,11 @@ code {
 
 @media (max-width: 600px) {
 }
+
+a.link-unstyled,
+a.link-unstyled:link,
+a.link-unstyled:focus,
+a.link-unstyled:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
