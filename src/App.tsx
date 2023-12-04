@@ -69,6 +69,7 @@ const App: React.FC = () => {
               ":hover": {
                 filter: "grayscale(0%) brightness(120%)",
               },
+              borderRadius: 0,
             }}
           >
             <Typography
@@ -131,6 +132,7 @@ const App: React.FC = () => {
               ":hover": {
                 filter: "grayscale(0%) brightness(110%)",
               },
+              borderRadius: 0,
             }}
           >
             <Typography
