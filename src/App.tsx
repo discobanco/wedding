@@ -29,7 +29,7 @@ const App: React.FC = () => {
           }}
         >
           <Typography variant="h5" component="h2">
-            Choose Your Destination
+            Choose Your Destination(s)
           </Typography>
           <Typography variant="body1" color="textSecondary">
             You can visit either or both weddings by clicking on the
@@ -37,7 +37,7 @@ const App: React.FC = () => {
           </Typography>
           <Separator />
           <Typography variant="h5" component="h2">
-            Elige tu destino
+            Elige tu(s) destino(s)
           </Typography>
           <Typography variant="body1" color="textSecondary">
             Puedes visitar cualquiera o ambas bodas haciendo clic en los
@@ -80,7 +80,7 @@ const App: React.FC = () => {
               fontFamily={"LoveLight"}
               pt={20}
             >
-              24/08
+              24/08/2024
             </Typography>
             <Typography
               variant="h2"
@@ -142,7 +142,7 @@ const App: React.FC = () => {
               fontFamily={"LoveLight"}
               pt={20}
             >
-              31/08
+              31/08/2024
             </Typography>
             <Typography
               variant="h2"
